@@ -2,7 +2,9 @@ import Container from 'react-bootstrap/Container';
 import Nav from 'react-bootstrap/Nav';
 import Navbar from 'react-bootstrap/Navbar';
 import NavDropdown from 'react-bootstrap/NavDropdown';
-import CartWindow from './CartWindow';
+import ButtonCart from '../components/ButtonCar';
+
+
 
 
 function NavBar() {
@@ -10,7 +12,7 @@ function NavBar() {
     
     <Navbar expand="lg" className="bg-body-tertiary">
       <Container>
-        <Navbar.Brand href="#home">E-commérage</Navbar.Brand>
+        <Navbar.Brand href="#home">Azomam</Navbar.Brand>
         <Navbar.Toggle aria-controls="basic-navbar-nav" />
         <Navbar.Collapse id="basic-navbar-nav">
           <Nav className="me-auto">
@@ -31,8 +33,8 @@ function NavBar() {
         </Navbar.Collapse>
         
       </Container>
-      <CartWindow/>
-    </Navbar>
+      <ButtonCart style={{ padding: '10px', marginRight: '15px'}}/>
+    </Navbar> 
     
   );
 }

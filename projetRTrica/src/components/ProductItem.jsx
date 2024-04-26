@@ -10,7 +10,7 @@ function ProductItem() {
             <Card.Body>
                 <Card.Title>Produit</Card.Title>
             </Card.Body>
-                <ProductItemForm />
+            <ProductItemForm />
         </Card>
     );
 }
