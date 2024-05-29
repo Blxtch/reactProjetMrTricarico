@@ -2,17 +2,13 @@ import Container from 'react-bootstrap/Container';
 import Nav from 'react-bootstrap/Nav';
 import Navbar from 'react-bootstrap/Navbar';
 import NavDropdown from 'react-bootstrap/NavDropdown';
-import ButtonCart from '../components/ButtonCar';
+import ButtonCart from './ButtonCar'; 
 
-
-
-
-function NavBar() {
+function NavBar({ cartItems }) {
   return (
-    
     <Navbar expand="lg" className="bg-body-tertiary">
       <Container>
-        <Navbar.Brand href="#home">Azomam</Navbar.Brand>
+        <Navbar.Brand href="/">Azomam</Navbar.Brand>
         <Navbar.Toggle aria-controls="basic-navbar-nav" />
         <Navbar.Collapse id="basic-navbar-nav">
           <Nav className="me-auto">
@@ -31,11 +27,9 @@ function NavBar() {
             </NavDropdown>
           </Nav>
         </Navbar.Collapse>
-        
       </Container>
-      <ButtonCart style={{ padding: '10px', marginRight: '15px'}}/>
-    </Navbar> 
-    
+      <ButtonCart cartItems={cartItems} />
+    </Navbar>
   );
 }
 
